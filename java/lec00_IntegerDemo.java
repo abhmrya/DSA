@@ -1,4 +1,4 @@
-public class IntegerDemo {
+public class lec00_IntegerDemo {
     // byte rollNo = 22;  // 8 bits
     short jeerank =32323;
     int rollNo=988323302;       // 32 bits
@@ -21,7 +21,7 @@ public class IntegerDemo {
     }
  
     public static void main(String[] args) {
-        IntegerDemo obj = new IntegerDemo();
+        lec00_IntegerDemo obj = new lec00_IntegerDemo();
         System.out.println(obj.rollNo);
         obj.display();
     }

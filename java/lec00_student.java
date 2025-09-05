@@ -1,4 +1,4 @@
-public class student{
+public class lec00_student{
     // rollNo       given error this is global assisgn
     int rollNo  = 22;   // attributes,instance variable(class level variavles)
 
@@ -11,7 +11,7 @@ public class student{
 
     public static void main(String[] args) {
         //  System.out.println(rollNo);   //not print directly
-        student obj = new student();
+        lec00_student obj = new lec00_student();
         System.out.println(obj.rollNo);
         obj.display();
     }
