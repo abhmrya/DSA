@@ -39,5 +39,7 @@ public class lec05_scanner {
         byte summm = (byte)(num5+num6);
         System.out.println("sum is "+summm);
 
+        scanner.close();
+
     }
 }

@@ -13,6 +13,7 @@ public class ass_06_02 {
         int time = scanner.nextInt();
         int simple_interast = (int)(principle*rate*time)/100;
         System.out.println("Simple Interest is:  " + simple_interast);
+        scanner.close();
         
     }
 }
