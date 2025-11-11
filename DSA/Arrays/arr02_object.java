@@ -1,4 +1,3 @@
-package DSA.Arrays;
 
 class Student{
     String name;
