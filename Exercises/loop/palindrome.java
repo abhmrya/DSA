@@ -7,7 +7,7 @@ public class palindrome {
         String str  = scanner.nextLine();
         int n = str.length();
         String rev="";
-        for(int i = n-1 ;i>=0;i--){
+        for(int i = n-1 ; i >=0 ; i--){
             rev += str.charAt(i);
         }
         if(str.equals(rev)){
@@ -16,6 +16,5 @@ public class palindrome {
         else{
             System.out.println("not equel");
         }
-
     }
 }
