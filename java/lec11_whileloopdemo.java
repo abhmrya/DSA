@@ -1,8 +1,8 @@
-package whileloop;
+
 
 import java.util.Scanner;
 
-public class whileloopdemo {
+public class lec11_whileloopdemo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
     

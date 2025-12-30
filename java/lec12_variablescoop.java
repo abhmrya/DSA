@@ -1,5 +1,5 @@
-package scoop;
-public class variablescoop {
+
+public class lec12_variablescoop {
     static int a = 10;
     int b;
     void display(){
@@ -8,8 +8,8 @@ public class variablescoop {
 
     }
     public static void main(String[] args) {
-        variablescoop obj = new variablescoop();
-        variablescoop obj2 = new variablescoop();
+        lec12_variablescoop obj = new lec12_variablescoop();
+        lec12_variablescoop obj2 = new lec12_variablescoop();
 
         obj.b=45;
         obj2.b = 67;
