@@ -1,13 +1,17 @@
 package Exercises.nested;
 
+import java.util.Scanner;
+
 public class pattern4 {
     public static void main(String[] args) {
-        for (int i = 1; i <=5; i++) {
-            for (int j = 5; j > 5-i; j--) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the number of row.");
+        int n = scanner.nextInt();
+        for (int i = 1; i <=n; i++) {
+            for (int j = 1; j <i; j++) {
                 System.out.print("  ");
             }
-
-            for (int j = 1; j <=5-i+1; j++) {
+            for (int j =n; j >=i; j--) {
                 System.out.print(" *");
                 
             }
