@@ -24,5 +24,6 @@ public class lec10_switch {
             default:
                 System.out.println("invalid choice");
         }
+        scanner.close();
     }
 }

@@ -63,6 +63,7 @@ public class proj_02_guessing_game {
             }
             
         }
+        scanner.close();
     }
 }
 

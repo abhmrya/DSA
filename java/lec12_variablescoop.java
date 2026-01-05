@@ -14,8 +14,8 @@ public class lec12_variablescoop {
         obj.b=45;
         obj2.b = 67;
         // variablescoop.a=20;
-        obj.a=20;
-        obj2.a=30;
+        // obj.a=20;
+        // obj2.a=30;
  
         obj.display();
         obj2.display();

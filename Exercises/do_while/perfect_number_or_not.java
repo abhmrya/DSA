@@ -21,5 +21,6 @@ public class perfect_number_or_not {
                 System.out.println("This number is not perfect numbe.");
             }
         } while (n!=0);
+        scanner.close();
     }
 }

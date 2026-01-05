@@ -21,6 +21,7 @@ public class pattern5 {
             System.out.println();
             
         }
+        scanner.close();
         
     }
 }

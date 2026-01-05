@@ -16,5 +16,6 @@ public class palindrome {
         else{
             System.out.println("not equel");
         }
+        scanner.close();
     }
 }

@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import Exercises.loop.reverse_number;
-
 public class lec16_method {
     static int addition(){
         Scanner scanner = new Scanner(System.in);
@@ -11,8 +9,8 @@ public class lec16_method {
         int num2 = scanner.nextInt();
         int sum = num1+num2;
         System.out.println("The sum is: "+sum);
+        scanner.close();
         return sum;
-
     }
     public static void main(String[] args) {
 

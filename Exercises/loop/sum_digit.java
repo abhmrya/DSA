@@ -14,6 +14,7 @@ public class sum_digit {
             n=n/10;
         }
         System.out.println("sum is "+sum);
+        scanner.close();
 
     }
 }

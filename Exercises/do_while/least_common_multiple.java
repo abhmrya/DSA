@@ -17,5 +17,6 @@ public class least_common_multiple{
         }
         System.out.println("GCD is "+a);
         System.out.println("LCM is : "+(a1*b1)/a);
+        scanner.close();
     }
 }

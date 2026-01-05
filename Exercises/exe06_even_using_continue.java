@@ -22,5 +22,6 @@ public class exe06_even_using_continue {
         //     }
         //     System.out.println(i);
         // }
+        scanner.close();
     }
 }

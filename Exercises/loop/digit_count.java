@@ -19,5 +19,6 @@ public class digit_count {
             }
             System.out.print("count is :" + count);
             }
+            scanner.close();
     }
 }

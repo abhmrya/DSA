@@ -17,5 +17,6 @@ public class N_pattern {
             }
             System.out.println(); 
         }
+        scanner.close();
     }
 }

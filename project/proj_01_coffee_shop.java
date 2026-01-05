@@ -48,6 +48,7 @@ public class proj_01_coffee_shop {
             }
             System.out.println("total bill is "+bill);
         }
+        scanner.close();
         
     }
 }

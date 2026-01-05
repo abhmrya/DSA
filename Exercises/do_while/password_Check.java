@@ -19,5 +19,6 @@ public class password_Check {
 
         } while (!correct_password.equals(password));
         System.out.println("Access Granted");
+        scanner.close();
     }
 }

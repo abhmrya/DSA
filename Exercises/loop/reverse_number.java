@@ -14,5 +14,6 @@ public class reverse_number {
             n=n/10;
         }
         System.out.println("reverse number is- "+reverse);
+        scanner.close();
     }
 }

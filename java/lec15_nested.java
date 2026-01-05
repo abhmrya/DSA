@@ -14,6 +14,7 @@ public class lec15_nested {
             System.out.println();
             
         }
+        scanner.close();
 
     }
 } 

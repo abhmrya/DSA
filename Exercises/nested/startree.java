@@ -14,5 +14,6 @@ public class startree {
             }
             System.out.println();
         }
+        scanner.close();
     }
 }

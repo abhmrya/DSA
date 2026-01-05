@@ -15,5 +15,6 @@ public class exe05_two_no_equal_bitwise_check {
         else{
             System.out.println("number are not equal");
         }
+        scanner.close();
     }
 }

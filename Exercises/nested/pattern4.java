@@ -18,5 +18,6 @@ public class pattern4 {
             System.out.println();
             
         }
+        scanner.close();
     }
 }

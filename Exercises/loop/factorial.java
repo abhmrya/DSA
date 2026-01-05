@@ -15,6 +15,7 @@ public class factorial {
         for (int i=1;i<=n;i++){
             factorial = factorial*i;
         } 
+        scanner.close();
     }   
         System.out.println("you given number n  is factorial value is: "+ factorial );
     }

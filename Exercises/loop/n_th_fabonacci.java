@@ -25,5 +25,6 @@ public class n_th_fabonacci {
         }
         System.out.println("nth fabonacci number is: "+b);
     }
+    scanner.close();
     }
 }

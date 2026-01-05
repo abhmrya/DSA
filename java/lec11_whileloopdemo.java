@@ -37,6 +37,6 @@ public class lec11_whileloopdemo {
             }
         }while(n>50 || n<1);
             System.out.println("You entered "+ n + "and thid is a valid number!");
-        
+        sc.close();
     }
 }

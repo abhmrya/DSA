@@ -14,5 +14,6 @@ public class total_no_divisior {
                 i++;
         }
         System.out.println("Total number of divisior is: "+count);
+        scanner.close();
     }
 }

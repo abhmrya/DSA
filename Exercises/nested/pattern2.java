@@ -29,5 +29,6 @@ public class pattern2 {
             System.out.println();
             
         }
+        scanner.close();
     }
 }

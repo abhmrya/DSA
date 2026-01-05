@@ -12,5 +12,6 @@ public class sum_first_n_number {
             sum= sum+i;
         }    
         System.out.println("you given number of sum n number is "+ sum );
+        scanner.close();
     }
 }

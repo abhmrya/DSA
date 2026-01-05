@@ -15,6 +15,7 @@ public class Greatest_Common_Divisor {
             a = b;
             b = r;
         }
+        sc.close();
 
         System.out.println("GCD = " + a);
     }

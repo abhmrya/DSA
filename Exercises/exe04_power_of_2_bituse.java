@@ -15,5 +15,6 @@ public class exe04_power_of_2_bituse {
         else{
             System.out.println("Number is not power of 2");
         }
+        scanner.close();
     }
 }

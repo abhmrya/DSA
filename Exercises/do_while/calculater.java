@@ -54,5 +54,6 @@ public class calculater {
             }
             
         } while (choice!=5);
+        scanner.close();
     }
 }

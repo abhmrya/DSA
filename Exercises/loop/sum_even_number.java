@@ -15,5 +15,6 @@ public class sum_even_number {
             
         }    
         System.out.println("sum of even number " + n +" is  "+ sum );
+        scanner.close();
     }
 }

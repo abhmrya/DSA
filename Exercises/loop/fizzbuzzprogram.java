@@ -20,5 +20,6 @@ public class fizzbuzzprogram {
                 System.out.println(i);
             }
         }
+        scanner.close();
     }
 }
