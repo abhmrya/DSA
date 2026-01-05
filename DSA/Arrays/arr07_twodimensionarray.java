@@ -1,5 +1,4 @@
-import java.lang.reflect.Array;
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class arr07_twodimensionarray {
@@ -77,6 +76,7 @@ public class arr07_twodimensionarray {
             }   
             System.out.println();
         }
+        scanner.close();
     }
 }
 class Employee{

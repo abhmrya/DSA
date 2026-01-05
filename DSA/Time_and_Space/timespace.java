@@ -1,7 +1,6 @@
 package DSA.Time_and_Space;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
+
 
 public class timespace {
     static void linearsearch(){

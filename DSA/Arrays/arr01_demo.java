@@ -33,5 +33,6 @@ public class arr01_demo {
         for(int i : numbers){
             System.out.println(i);
         }
+        scanner.close();
     }
 }

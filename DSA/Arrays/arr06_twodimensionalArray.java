@@ -30,6 +30,7 @@ public class arr06_twodimensionalArray {
         }
         System.out.println(marks[0][1]);
         System.out.println(marks[1][1]);
+        scanner.close();
 
     }
 }
