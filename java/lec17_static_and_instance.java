@@ -1,4 +1,4 @@
-public class static_and_instance {
+public class lec17_static_and_instance {
     // String name = "Abhay";
 
     static String name = "Abhay";
@@ -7,7 +7,7 @@ public class static_and_instance {
     // static_and_instance obj = new static_and_instance();
     // System.out.println("hii "+ obj.name);
 
-        System.out.println("hii "+ name);
+        System.out.println("hii "+ name +" greet");
     }
 
     static void display(){
@@ -29,7 +29,21 @@ public class static_and_instance {
     }
 
     // Bank's Exchange Rate USD to EUR
-      
+      String empname;
+      int empId1;
+
+    void setInfo(String name,int id){
+        empname = name;
+        empId1 =id;
+      }
+    void getInfo(){
+        greet();
+        System.out.println("Hi "+empname);
+        System.out.println("Your emp id is: "+ empId1);
+    }
+    void updateName(String name){
+        empname = name;
+    }
     public static void main(String[] args) {
         // greet();
         // static_and_instance.greet();
@@ -38,7 +52,16 @@ public class static_and_instance {
         // System.out.println(square(5));
         // System.out.println(reverse("abhay"));
         // System.out.println(toupper("abhay"));
+
+        lec17_static_and_instance obj = new lec17_static_and_instance();
+        obj.setInfo("abhay",101);
+        obj.getInfo();
+        obj.updateName("payal");
+        obj.getInfo();
+        // obj.setInfo("Kush",102);
+        // obj.getInfo();
     }
+    
 }
 // class Test{
 //     static String name = "Abhay";
