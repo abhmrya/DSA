@@ -1,5 +1,4 @@
-package Exercises.method;
-
+package method;
 import java.util.Scanner;
 
 public class calculateprice {

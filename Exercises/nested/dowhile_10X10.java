@@ -1,4 +1,4 @@
-package Exercises.nested;
+package nested;
 
 public class dowhile_10X10 {
     public static void main(String[] args) {

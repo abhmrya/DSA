@@ -1,4 +1,4 @@
-package Exercises.ForeachLoop;
+package ForeachLoop;
 // how many times a specific character appears in a given character array
 public class countcharacter {
     public static void main(String[] args) {

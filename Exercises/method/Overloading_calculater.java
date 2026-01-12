@@ -1,5 +1,4 @@
-package Exercises.method;
-
+package method;
 public class Overloading_calculater {
     int calculate(int a,int b){
         return (a+b);

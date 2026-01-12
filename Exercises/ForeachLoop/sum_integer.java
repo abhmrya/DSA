@@ -1,4 +1,4 @@
-package Exercises.ForeachLoop;
+package ForeachLoop;
 
 // print sum of all element of an integer array using for each loop
 public class sum_integer {

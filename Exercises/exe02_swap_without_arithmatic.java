@@ -1,4 +1,3 @@
-package Exercises;
 
 public class exe02_swap_without_arithmatic {
     public static void main(String[] args) {

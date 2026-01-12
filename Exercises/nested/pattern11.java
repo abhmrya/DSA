@@ -1,5 +1,4 @@
-package Exercises.nested;
-
+package nested;
 import java.util.Scanner;
 
 public class pattern11 {

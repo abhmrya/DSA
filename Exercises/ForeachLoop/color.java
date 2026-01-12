@@ -1,4 +1,4 @@
-package Exercises.ForeachLoop;
+package ForeachLoop;
 
 public class color {
     public static void main(String[] args) {

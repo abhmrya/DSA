@@ -1,5 +1,4 @@
-package Exercises.nested;
-
+package nested;
 public class while_10x10 {
     public static void main(String[] args) {
         int i=1;

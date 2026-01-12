@@ -1,4 +1,3 @@
-package Exercises;
 
 public class exe03_even_odd_bitwise {
     public static void main(String[] args) {

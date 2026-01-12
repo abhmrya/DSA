@@ -1,5 +1,4 @@
-package Exercises.nested;
-
+package nested;
 public class nested_10X10 {
     public static void main(String[] args) {
         for (int i = 1; i <= 10; i++) {

@@ -1,4 +1,4 @@
-package Exercises.loop;
+package loop;
 //	WAP to check if a number is prime or not.
 import java.util.Scanner;
 

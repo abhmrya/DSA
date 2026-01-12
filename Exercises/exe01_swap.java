@@ -1,4 +1,4 @@
-package Exercises;
+
 class exe01_swap {
     public static void main(String[] args) {
         int a= 10;

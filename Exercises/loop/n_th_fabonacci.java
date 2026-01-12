@@ -1,5 +1,4 @@
-package Exercises.loop;
-
+package loop;
 import java.util.Scanner;
 
 public class n_th_fabonacci {

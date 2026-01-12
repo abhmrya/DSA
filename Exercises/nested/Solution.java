@@ -1,5 +1,4 @@
-package Exercises.nested;
-
+package nested;
 class Solution {
     public static void main(String[] args) {
         int numBottles =9;

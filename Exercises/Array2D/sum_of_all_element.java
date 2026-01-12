@@ -2,7 +2,7 @@ package Array2D;
 
 import java.util.Scanner;
 
-public class matric2Darrayprint {
+public class sum_of_all_element {
     public static void main(String[] args) {
         int[][] matrix = new int[3][3];
         Scanner scanner = new Scanner(System.in);
@@ -15,16 +15,15 @@ public class matric2Darrayprint {
             }
         }
 
-        //print of matrix
-        System.out.println("Matrix is: ");
+        //sum of matrix
+        int sum =0;
+        System.out.println("Matrix sum is: ");
         for(int[] row:matrix){
-            System.out.print("[ ");
             for(int i:row){
-                System.out.print(i+" ");
+                sum=sum+i;
             }
-            System.out.print("]");
-            System.out.println();
         }
+        System.out.println("sum is: "+sum);
 
 
 
