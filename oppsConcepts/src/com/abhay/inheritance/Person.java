@@ -1,7 +1,7 @@
 package com.abhay.inheritance;
 
 public class Person {
-    private String name;
+    protected  String name;
     private String address;
     private long phoneNo;
 
@@ -15,8 +15,13 @@ public class Person {
     public Person(String name,String address){
         this.name=name;
         this.address=address;
-        System.out.println("Person constractor called with argument "+"name is: "+name+"address is: "+address);
+        System.out.println("Person constractor called with argument "+"name is: "+name+"  address is: "+address);
     }
+
+    public void display(){
+        System.out.println(name+" is a person");
+    }
+
     public String getName() {
         return name;
     }

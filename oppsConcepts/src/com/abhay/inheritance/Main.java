@@ -21,7 +21,7 @@ public class Main {
         // System.out.println("Person Name : " + p1.getName());
         // s1.greet();
 
-        Employee emp1 = new Employee("abhay","delhi","abhay123");
+        // Employee emp1 = new Employee("abhay","delhi","abhay123");
         // // Person per1 = new  Person();
         // // System.out.println("name :"+emp1.getName());
         // // System.out.println("adress : "+emp1.getAddress());
@@ -30,7 +30,20 @@ public class Main {
         // EngineeringStudent s1 = new EngineeringStudent();
 
         // Employee emp1 = new Employee("abhay");
-        System.out.println(emp1.toString());
+        // System.out.println(emp1.toString());
+
+        // Person p1 = new Person("abhay","india");
+        // p1.display();
+
+        // Employee emp1 = new Employee("abhay","majduri");
+        // emp1.display(); 
+
+        Person p1 = new Employee("abhay","super majdur");  // reference type
+        p1.display();
+
+        // Employee emp1 = new Person("abhay","india");  // error
+
+
 
     }
 }

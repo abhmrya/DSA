@@ -1,9 +1,10 @@
 package com.abhay.inheritance;
 
 public class Employee extends Person{
-    private String name;
+    // private String name;
     private String impId;
     private float salary;
+    private String jobTitle;
 
     // public  Employee(){
     //    // super();   //this()
@@ -13,18 +14,26 @@ public class Employee extends Person{
     //     this.name = name;
     // }
 
-    public Employee(String name,String impId){
+    public Employee(String name,String jobTitle){
         super(name);
-        
-        this.impId=impId;
-        System.out.println("EMployee constructer with 2 argument called. "+name+" "+impId);
+        this.jobTitle=jobTitle;
     }
+
+    // public Employee(String name,String impId){
+    //     super(name);
+    //     this.impId=impId;
+    //     System.out.println("EMployee constructer with 2 argument called. "+name+" "+impId);
+    // }
 
     public Employee(String name,String address,String impId){
         super(name,address);
-        this.name=name;
+        // this.name=name;
         this.impId=impId;
         System.out.println("EMployee constructer with 3 argument called. "+name+" "+impId);
+    }
+
+    public void display(){
+        System.out.println(super.name+" is an employee working as "+jobTitle);
     }
 
     public void setSalary(float salary) {
@@ -43,7 +52,7 @@ public class Employee extends Person{
     //     return "name :"+getName()+"\naddress"+getAddress()+"\nempId"+impId;
     // }
 
-    public String toString(){
-        return "name :"+name+"\naddress"+getAddress()+"\nempId"+impId;
-    }
+    // public String toString(){
+    //     return "name :"+name+"\naddress"+getAddress()+"\nempId"+impId;
+    // }
 }

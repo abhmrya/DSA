@@ -4,6 +4,10 @@ public class Student extends Person {
     private short rollNo;
     private String course;
 
+    public Student(){
+        System.out.println("Student constructor called.");
+    }
+
     public short getRollNo() {
         return rollNo;
     }
