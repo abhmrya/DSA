@@ -1,4 +1,4 @@
-package DSAARRAY;
+package DSAExercise.Binary;
 
 public class LargestElement {
 
