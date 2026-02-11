@@ -16,8 +16,7 @@ public class LowerBound {
                 low=mid+1;
             }
         }
-        return low;
-    }
+        return low;       }
     public static void main(String[] args) {
         int[] arr = new int[] {2,5,7,15,15,17,22,25,50};
         int key = 15;
