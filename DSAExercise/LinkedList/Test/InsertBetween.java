@@ -28,10 +28,21 @@ public class InsertBetween {
     }
 
     void InsertBW(int data,int poss){
-        Node temp;
-        temp=head;
-        while (temp!=) { 
-            
+        Node newNode = new Node(data);
+        if(poss<=0 || poss>size+1){
+            System.out.println("Psition is not valid ");
+            return ;
+        }
+        if(head == null){
+            if(poss==1){
+                insertBegin(data);
+            }
+        }
+        if(poss==1){
+            newNode.next=head;
+            head=newNode;
+            size++;
+            return ;
         }
     }
 
