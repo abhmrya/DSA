@@ -1,7 +1,7 @@
 package DSAExercise.LinkedList.Test2;
 
 public class InsertBeginning {
-    private Node head;
+    Node head;
     private int size;
 
     public void InsertBeg(int data){
@@ -65,18 +65,18 @@ public class InsertBeginning {
         size++;
     }
 
-    public static void main(String[] args) {
-        InsertBeginning obj = new InsertBeginning();
-        obj.InsertBeg(12);
-        obj.InsertBeg(32);
-        obj.InsertBeg(142);
-        obj.InsertBeg(54);
-        obj.InsertBeg(3);
-        obj.InsertBeg(2);
+    // public static void main(String[] args) {
+    //     InsertBeginning obj = new InsertBeginning();
+    //     obj.InsertBeg(12);
+    //     obj.InsertBeg(32);
+    //     obj.InsertBeg(142);
+    //     obj.InsertBeg(54);
+    //     obj.InsertBeg(3);
+    //     obj.InsertBeg(2);
 
-        obj.InsertBetwe(1000,2);
-        obj.insertAftVal(1000,1111);
+    //     obj.InsertBetwe(1000,2);
+    //     obj.insertAftVal(1000,1111);
 
-        obj.traverse();
-    }
+    //     obj.traverse();
+    // }
 }
