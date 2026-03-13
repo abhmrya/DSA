@@ -120,6 +120,7 @@ public class SinglyLL {
         }
         if(pos==1){
             deleteforbeginning();
+            return;
         } 
         // if(pos<=0 || pos>size){
         //     System.out.println("Given position is not valid so can not delete any node.");
