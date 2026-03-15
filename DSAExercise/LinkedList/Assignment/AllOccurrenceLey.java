@@ -1,6 +1,6 @@
 package DSAExercise.LinkedList.Assignment;
 
-public class DeleteFirstNodeKeyGiven {
+public class AllOccurrenceLey {
     Node head;
     Node temp;
 
@@ -23,26 +23,25 @@ public class DeleteFirstNodeKeyGiven {
     void removeKeyNode(int key){
         Node temp=head;
         Node prevNode=null;
+        
         if(head==null){
             System.out.println("List is empty.");
             return;
         }
 
-        if(head.data==key){
-            head=head.next;
-            return;
-        }
-
-        while(temp!=null && temp.data!=key){
-            prevNode=temp;
+        while(temp!=null){
+            if(temp.data==key){
+                if(prevNode==null){
+                    head=temp.next;
+                }else{
+                prevNode.next=temp.next;
+                }
+            }else{
+                prevNode=temp;
+            }
             temp = temp.next;
+            
         }
-
-        if (temp == null) {
-        System.out.println("Key " + key + " not found in the list.");
-        return;
-        }
-        prevNode.next=temp.next;
     }
 
     void traverse(){
@@ -55,13 +54,19 @@ public class DeleteFirstNodeKeyGiven {
     }
 
     public static void main(String[] args) {
-        DeleteFirstNodeKeyGiven obj = new DeleteFirstNodeKeyGiven();
+        AllOccurrenceLey obj = new AllOccurrenceLey();
         obj.insert(11);
         obj.insert(12);
         obj.insert(13);
-        obj.insert(14);
+        obj.insert(12);
         obj.insert(15);
+        obj.insert(12);
+        obj.insert(12);
+        obj.insert(12);
+        obj.insert(12);
+
         obj.traverse();
+
         obj.removeKeyNode(12);
         obj.traverse();
     }
