@@ -127,7 +127,94 @@ public class DoublyLinkedList {
         size++;
     }
 
-    void travers(){
+    Node deleteFromBeginning(){
+        if(head==null){
+            System.out.println("Its is empty. so can not delete.");
+            return head;
+        }
+        if(head.nextNode==null){
+            head=null;
+            tail=null;
+            size--;
+            return head;
+        }
+        Node prevNode;
+        prevNode=head;
+        head = head.nextNode;
+        head.prevNode=null;
+        prevNode.nextNode=null;
+        size--;
+        return head;
+    }
+
+    Node deleteFromEnd(){
+        if(head==null){
+            System.out.println("Its is empty. so can not delete.");
+            return head;
+        }
+        if(head.nextNode==null){
+            head=null;
+            tail=null;
+            size--;
+            return head;
+        }
+        Node temp = head;
+        while (temp.nextNode!=null) {
+            temp = temp.nextNode; 
+        }
+        Node prev;
+        prev=temp.prevNode;
+        prev.nextNode=null;
+        temp.prevNode=null;
+        size--;
+        return head;
+    }
+
+    Node deleteFromBetween(int poss){
+        if(head==null){
+            System.out.println("List is empty.");
+            return head;
+        }
+
+        if(poss<=0){
+        System.out.println("Invalid position");
+        return head;
+        }
+
+        if(poss==1){
+            return deleteFromBeginning();
+        }
+
+        Node temp=head;
+        int curr=1;
+        while (temp!=null && curr<poss) { 
+            temp=temp.nextNode;
+            curr++;
+        }
+
+        if(temp==null){
+        System.out.println("Position out of range");
+        return head;
+        }
+
+        Node prev=temp.prevNode;
+        Node next=temp.nextNode;
+
+        prev.nextNode=next;
+
+        if(next!=null){
+        next.prevNode=prev;
+        }else{
+            tail=prev;
+        }
+
+        temp.nextNode=null;
+        temp.prevNode=null;
+        size--;
+        return head;
+    }
+
+    void travers(Node head){
         Node temp=head;
         if(temp==null){
             System.out.println("List is empty");
@@ -143,22 +230,34 @@ public class DoublyLinkedList {
 
     public static void main(String[] args) {
         DoublyLinkedList obj = new DoublyLinkedList();
+        Node head;
         obj.insertBeginning(100);
         obj.insertBeginning(200);
         obj.insertBeginning(300);
         obj.insertBeginning(400);
         obj.insertBeginning(500);
 
-        obj.travers();
+        // obj.travers();
 
-        obj.insertEnd(600);
-        obj.travers();
+        // obj.insertEnd(600);
+        // obj.travers(obj.head);
 
-        obj.insertBetween(1000,4);
-        obj.travers();
+        // obj.insertBetween(1000,4);
+        // obj.travers(obj.head);
 
-        obj.afterValue(1111,300);
-        obj.travers();
+        // obj.afterValue(1111,300);
+        // obj.travers(obj.head);
+
+        
+        // head = obj.deleteFromBeginning();
+        // head = obj.deleteFromBeginning();
+        // obj.travers(obj.head);
+
+        // head = obj.deleteFromEnd();
+        // obj.travers(obj.head);
+
+        head = obj.deleteFromBetween(3);
+        obj.travers(obj.head);
 
     }
 }
