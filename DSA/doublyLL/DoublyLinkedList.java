@@ -256,8 +256,11 @@ public class DoublyLinkedList {
         // head = obj.deleteFromEnd();
         // obj.travers(obj.head);
 
-        head = obj.deleteFromBetween(3);
-        obj.travers(obj.head);
+        // head = obj.deleteFromBetween(3);
+        // obj.travers(obj.head);
+
+        // head = obj.deleteFromPosition(2);  //pending
+        // obj.travers(head);
 
     }
 }
