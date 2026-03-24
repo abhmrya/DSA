@@ -109,6 +109,79 @@ public class CircularDLL {
         return head;
     }
 
+    Node deleteForbeginning(){
+        if(head==null){
+            System.out.println("List is empty.");
+            return head;
+        }
+        if(head.next ==head){
+            head = null;
+            tail = null;
+            size--;
+            return head;
+        }
+
+        Node temp = head;
+        Node nextNode = temp.next;
+        Node prevNode = temp.prev;
+
+        nextNode.prev = prevNode;
+        prevNode.next=nextNode;
+        head=nextNode;
+        tail.next = head;
+        temp.next=null;
+        temp.prev=null;
+        size--;
+        return head;
+    }
+
+    Node deleteForValue(int value){
+        if(head==null){
+            System.out.println("List is empty. Not any value delete.");
+            return head;
+        }
+        Node temp = head;
+        do { 
+            if(temp.data==value){
+                break;
+            }
+            temp = temp.next;
+        } while (temp!=head);
+        if(temp==head && temp.data !=value){
+            System.out.println("Value not found.");
+            return head;
+        }
+        if(head.next==head){
+            head=null;
+            tail=null;
+            size--;
+            return head;
+        }
+
+        Node prevNode = temp.prev;
+        Node nextNode = temp.next;
+        
+        if(temp==head){
+            head=nextNode;
+        }
+
+        if(temp==tail){
+            tail=prevNode;
+        }
+
+        prevNode.next=temp.next;
+        nextNode.prev=temp.prev;
+        tail.next =head;
+        head.prev = tail;
+        temp.next=null;
+        temp.prev=null;
+
+        if(temp.next==head){
+            tail.next=head;
+        }
+
+        return head;
+    }
 
     void traverseCSLL(Node head){
         if(head==null){
@@ -153,5 +226,10 @@ public class CircularDLL {
         cdll.traverseCSLL(head);
         head = cdll.insertAfterValue(200,80);
         cdll.traverseCSLL(head);
+        head  = cdll.deleteForbeginning();
+        cdll.traverseCSLL(head);
+        head = cdll.deleteForValue(200);
+        cdll.traverseCSLL(head);
+
     }
 }
