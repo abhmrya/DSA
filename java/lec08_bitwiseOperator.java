@@ -1,10 +1,10 @@
 public class lec08_bitwiseOperator {
     public static void main(String[] args) {
         // int a=10,b=6;
-        // // int result=a&b;   
-        // // int result=a|b;    
-        // // System.out.println(result); 
-        // System.out.println("a & b "+ (a & b));  //0
+        // int result=a&b;   
+        // int result=a|b;    
+        // System.out.println(result); 
+        // System.out.println("a & b "+ (a & b));  //2
         // System.out.println("a | b "+ (a | b));  //14
         // System.out.println("a ^ b "+ (a ^ b));   //12
 
@@ -37,5 +37,8 @@ public class lec08_bitwiseOperator {
         System.out.println("ch1 & ch2 = "+(ch1&ch2));
         System.out.println("ch1 | ch2 = "+(ch1|ch2));
         System.out.println("ch1 ^ ch2 = "+(ch1^ch2));
+        System.out.println('a'-'A');
+        System.out.println(a-0);
+        System.out.println('A'-0);
     }
 }
