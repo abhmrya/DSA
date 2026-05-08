@@ -38,4 +38,12 @@ public class BinaryTree {
         System.out.println("rootNode value : "+rootNode.data);
         inorderTraversal(rootNode.right);
     }
+
+    void preOrderTraversal(Node rooNode){
+        if(rooNode==null) return;
+        System.out.println("rootNode value : "+rooNode.data);
+        preOrderTraversal(rooNode.left);
+        preOrderTraversal(rooNode.right);
+        
+    }
 }

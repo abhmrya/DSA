@@ -10,7 +10,9 @@ public class BinaryTreeMain {
         root = tree.createTree(scanner);
         System.out.println(root.data);
         tree.displayTree(root, 5);
-        tree.inorderTraversal(root);
+        // tree.inorderTraversal(root);
+
+        tree.preOrderTraversal(root);
         scanner.close();
 
     }
