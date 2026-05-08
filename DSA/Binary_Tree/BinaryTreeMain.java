@@ -9,6 +9,8 @@ public class BinaryTreeMain {
         Node root;
         root = tree.createTree(scanner);
         System.out.println(root.data);
+        tree.displayTree(root, 5);
+        tree.inorderTraversal(root);
         scanner.close();
 
     }
