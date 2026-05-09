@@ -1,5 +1,6 @@
 package DSA.Binary_Tree;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class BinaryTree {
@@ -32,18 +33,30 @@ public class BinaryTree {
         displayTree(node.left, level+1);
     }
 
-    void inorderTraversal(Node rootNode){
-        if(rootNode==null) return;
-        inorderTraversal(rootNode.left);
-        System.out.println("rootNode value : "+rootNode.data);
-        inorderTraversal(rootNode.right);
+    public ArrayList<Integer> inorderTraversal(Node rootNode){
+        ArrayList<Integer> list = new ArrayList<>();
+        if(rootNode==null) return list;
+        list.addAll(inorderTraversal(rootNode.left));
+        list.add(rootNode.data);
+        list.addAll(inorderTraversal(rootNode.right));
+        return list;
     }
 
-    void preOrderTraversal(Node rooNode){
-        if(rooNode==null) return;
-        System.out.println("rootNode value : "+rooNode.data);
-        preOrderTraversal(rooNode.left);
-        preOrderTraversal(rooNode.right);
-        
+    public ArrayList<Integer> preOrderTraversal(Node rootNode){
+        ArrayList<Integer> list = new ArrayList<>();
+        if(rootNode==null) return list;
+        list.add(rootNode.data);
+        list.addAll(preOrderTraversal(rootNode.left));
+        list.addAll(preOrderTraversal(rootNode.right));
+        return list;
+    }
+
+    public ArrayList<Integer> postOrderTraversal(Node rootNode){
+        ArrayList<Integer> list = new ArrayList<>();
+        if(rootNode==null) return list;
+        list.addAll(postOrderTraversal(rootNode.left));
+        list.addAll(postOrderTraversal(rootNode.right));
+        list.add(rootNode.data);
+        return list;
     }
 }
