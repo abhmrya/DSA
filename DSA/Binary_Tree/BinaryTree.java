@@ -1,7 +1,8 @@
 package DSA.Binary_Tree;
 
 import java.util.ArrayList;
-import java.util.Scanner;          
+import java.util.Scanner;
+import java.util.Stack;          
 
 public class BinaryTree {
     Node createTree(Scanner scanner){
@@ -48,6 +49,40 @@ public class BinaryTree {
         list.add(rootNode.data);
         list.addAll(preOrderTraversal(rootNode.left));
         list.addAll(preOrderTraversal(rootNode.right));
+        return list;
+    }
+
+    public ArrayList<Integer> preOrderIterative(Node root){
+        ArrayList<Integer> list = new ArrayList<>();
+        Stack<Node> stack = new Stack<>();
+
+        // M-1
+
+        // while(root!=null || !stack.isEmpty()){
+        //     if(root!=null){
+        //         list.add(root.data);
+        //         stack.push(root);
+        //         root = root.left;
+        //     }
+        //     else{
+        //         root = stack.pop();
+        //         root = root.right;
+        //     }
+        // }
+
+        // M-2
+
+        while(root!=null || !stack.isEmpty()){
+            while(root!=null){
+                list.add(root.data);
+                if(root.right!=null){
+                    stack.push(root.right);
+                }
+                root = root.left;
+            }if(!stack.isEmpty()){
+                root = stack.pop();
+            }
+        }
         return list;
     }
 

@@ -15,6 +15,9 @@ public class BinaryTreeMain {
         System.out.println("preOrder : "+tree.preOrderTraversal(root));
 
         System.out.println("postOrder : "+tree.postOrderTraversal(root));
+
+        System.out.println("preOrderIterative : "+tree.preOrderIterative(root));
+        
         scanner.close();
 
     }
