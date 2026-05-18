@@ -43,6 +43,24 @@ public class BinaryTree {
         return list;
     }
 
+    public ArrayList<Integer> inOrderIterative(Node root){
+        ArrayList<Integer> list = new ArrayList<>();
+        Stack<Node> stack = new Stack<>();
+        
+        while(!stack.isEmpty() || root!=null){
+            while(root!=null){
+                stack.push(root);
+                root = root.left;
+            }
+            if(root==null){
+                root = stack.pop();
+                list.add(root.data);
+                root = root.right;
+            }
+        }
+        return list;
+    }
+
     public ArrayList<Integer> preOrderTraversal(Node rootNode){
         ArrayList<Integer> list = new ArrayList<>();
         if(rootNode==null) return list;
