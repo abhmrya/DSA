@@ -112,4 +112,27 @@ public class BinaryTree {
         list.add(rootNode.data);
         return list;
     }
+
+    public ArrayList<Integer> postOrderIterative(Node root){
+        ArrayList<Integer> list = new ArrayList<>();
+        Stack<Node> stack = new Stack<>();
+        if(root==null) return list;
+        while (stack.isEmpty() || root!=null ) {
+            while(root!=null){
+                stack.push(root);
+                root = root.left;
+            }
+            if(root==null){
+                root = stack.pop();
+                list.add(root.data);
+                if(stack.peek().right!=null){
+                    root = root.right;
+                } 
+            }               
+        }
+
+        
+        
+        return list;
+    }
 }
