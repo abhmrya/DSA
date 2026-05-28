@@ -21,11 +21,23 @@ public class BinaryTreeUsingPreAndIn {
 
         return root;
     }
+
+    static void displayTree(Node node ,int level){
+        if(node==null) return;
+        displayTree(node.right, level+1);
+        for (int i=0;i<level;i++) {
+            System.out.print("    ");
+        }
+        System.out.println(node.data);
+        displayTree(node.left, level+1);
+    }
     
     public static void main(String[] args) {
         int [] preorder = {10,5,11,7,15,4};
         int[] inorder = {5,11,10,4,15,7};
         int[] preIndex ={0};
         Node root = constructTree(preorder,inorder,preIndex,0,inorder.length-1);
+        System.out.println("root : "+root);
+        displayTree(root,0);
     }
 }
