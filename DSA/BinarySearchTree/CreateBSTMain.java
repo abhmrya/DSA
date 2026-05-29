@@ -12,15 +12,22 @@ public class CreateBSTMain {
         tree.inOrder(tree.root);
 
         // search element section 
-        BSTSearch search = new BSTSearch();
-        int element = 700;
-        boolean searchElement = search.searchBst(tree.root,element);
-        System.out.println("If Element found then True otherwise False : "+searchElement);
+        // BSTSearch search = new BSTSearch();
+        // int element = 700;
+        // boolean searchElement = search.searchBst(tree.root,element);
+        // System.out.println("If Element found then True otherwise False : "+searchElement);
 
-        // insert element section
-        BSTInsert insert = new BSTInsert();
-        int elemInsert = 55;
-        insert.insertBST(tree.root,elemInsert);
+        // // insert element section
+        // BSTInsert insert = new BSTInsert();
+        // int elemInsert = 55;
+        // insert.insertBST(tree.root,elemInsert);
+        // tree.displayTree(tree.root,0);
+        // tree.inOrder(tree.root);
+
+        // delete section
+        BSTDelete delete = new BSTDelete();
+        int elemDelete = 40;
+        delete.deleteBst(tree.root,elemDelete);
         tree.displayTree(tree.root,0);
         tree.inOrder(tree.root);
     }
