@@ -1,13 +1,16 @@
 package DSA.BinarySearchTree;
 
 // call by main BST
+// M-2
+// this is *** Method 2 *** 
+// Methos 1 is already see by CreateBST 
 
-public class ConstructBSTPreOrder {
+public class ConstructBSTPreOrderM2 {
     Node root;
-    ConstructBSTPreOrder(){
+    ConstructBSTPreOrderM2(){
         root = null;
     }
-
+ 
     Node constructBstPre(int[] arr,int start,int end){
         if(start>end) return null;
         Node root = new Node(arr[start]);
@@ -19,5 +22,5 @@ public class ConstructBSTPreOrder {
         root.right = constructBstPre(arr,i,end);
         return root;
     }
-    
+      
 }

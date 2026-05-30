@@ -1,7 +1,4 @@
 package DSA.BinarySearchTree;
-// M-2
-// this is *** Method 2 *** 
-// Methos 1 is already see by CreateBST 
 
 public class CreateBSTMain {
     public static void main(String[] args) throws Exception{
@@ -41,13 +38,23 @@ public class CreateBSTMain {
         tree.inOrder(tree.root);
         System.out.println();
 
-        // Construct BST Using PreOrder 
+        // Construct BST Using PreOrder  M-2
         System.out.println("************ Construct BST Using PreOrder  ***********");
-        ConstructBSTPreOrder constr = new ConstructBSTPreOrder();
+        ConstructBSTPreOrderM2 constr = new ConstructBSTPreOrderM2();
         int[] preorder = {10,5,4,7,11,15,12,20,17};
         Node root1 = constr.constructBstPre(preorder,0,preorder.length-1);
         tree.displayTree(root1,0);
         tree.inOrder(root1);
+        System.out.println();
+
+        // Construct BST Using PreOrder  M-3
+        System.out.println("************ Construct BST Using PreOrder Method 3 ***********");
+        ConstructBSTPreOrderM3 constrm3 = new ConstructBSTPreOrderM3();
+        int[] preorder3 = {10,5,4,7,11,15,12,20,17};
+        int[] i = {0};
+        Node root3 = constrm3.constructBstPre(preorder3,i,Integer.MAX_VALUE);
+        tree.displayTree(root3,0);
+        tree.inOrder(root3);
         System.out.println();
     }
 }
