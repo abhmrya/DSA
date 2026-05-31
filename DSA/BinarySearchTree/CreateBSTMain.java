@@ -82,5 +82,13 @@ public class CreateBSTMain {
         tree.inOrder(rootRecursively);
         System.out.println();
 
+        // M-2 Iterative approach 
+        ConstructBSTPostOrderIterative iterative =  new ConstructBSTPostOrderIterative();
+        System.out.println("*************** Construct BST Using PostOrder :: Method 2- Iterative approach *********");
+        Node rootPostIterative = iterative.constructBSTPostIterative(postOrder);
+        tree.displayTree(rootPostIterative,0);
+        tree.inOrder(rootPostIterative);
+        System.out.println();
+
     }
 }
