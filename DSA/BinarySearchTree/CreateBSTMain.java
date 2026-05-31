@@ -62,5 +62,17 @@ public class CreateBSTMain {
         tree.displayTree(rootIterative,0);
         tree.inOrder(rootIterative);
         System.out.println();
+
+        ConstructBSTPostOrder constructPost = new ConstructBSTPostOrder();
+        System.out.println("*************** Construct BST Using PostOrder :: Method - recursion *********");
+        int[] postOrder = {5, 15, 10, 25, 35, 30, 20, 55, 50, 40};
+        int start = 0;
+        int end = postOrder.length-1;
+        Node rootPost = constructPost.constructBSTPost(postOrder,start,end);
+        tree.displayTree(rootPost,0);
+        tree.inOrder(rootPost);
+        System.out.println();
+
+
     }
 }
