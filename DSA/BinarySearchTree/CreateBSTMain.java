@@ -14,14 +14,14 @@ public class CreateBSTMain {
         System.out.println();
 
         // // search element section 
-        // System.out.println("************  Search Element of 70 *************");
+        System.out.println("************  Search Element of 70 *************");
         BSTSearch search = new BSTSearch();
         int element = 70;
         boolean searchElement = search.searchBst(tree.root,element);
         System.out.println("If Element found then True otherwise False : "+searchElement);
 
         // // insert element section
-        // System.out.println("*************  Insert Element of 55  ************");
+        System.out.println("*************  Insert Element of 55  ************");
         BSTInsert insert = new BSTInsert();
         int elemInsert = 55;
         insert.insertBST(tree.root,elemInsert);
@@ -30,7 +30,7 @@ public class CreateBSTMain {
         System.out.println();
 
         // // delete section
-        // System.out.println("*************  Delete Element of 40  ************");
+        System.out.println("*************  Delete Element of 40  ************");
         BSTDelete delete = new BSTDelete();
         int elemDelete = 40;
         delete.deleteBst(tree.root,elemDelete);
@@ -39,7 +39,7 @@ public class CreateBSTMain {
         System.out.println();
 
         // // Construct BST Using PreOrder  M-2
-        // System.out.println("************ Construct BST Using PreOrder  ***********");
+        System.out.println("************ Construct BST Using PreOrder  ***********");
         ConstructBSTPreOrderM2 constr = new ConstructBSTPreOrderM2();
         int[] preorder = {10,5,4,7,11,15,12,20,18};
         Node root1 = constr.constructBstPre(preorder,0,preorder.length-1);
@@ -48,7 +48,7 @@ public class CreateBSTMain {
         System.out.println();
 
         // // Construct BST Using PreOrder  M-3
-        // System.out.println("************ Construct BST Using PreOrder Method 3 Recursion ***********");
+        System.out.println("************ Construct BST Using PreOrder Method 3 Recursion ***********");
         ConstructBSTPreOrderM3 constrm3 = new ConstructBSTPreOrderM3();
         int[] preorder3 = {10,5,4,7,11,15,12,20,18};
         int[] i = {0};
@@ -63,6 +63,7 @@ public class CreateBSTMain {
         tree.inOrder(rootIterative);
         System.out.println();
 
+        //  ########   Post Order to BST Construct ################ 
         ConstructBSTPostOrder constructPost = new ConstructBSTPostOrder();
         System.out.println("*************** Construct BST Using PostOrder :: Method - recursion *********");
         int[] postOrder = {5, 15, 10, 25, 35, 30, 20, 55, 50, 40};
@@ -73,6 +74,13 @@ public class CreateBSTMain {
         tree.inOrder(rootPost);
         System.out.println();
 
+        //  M-2 recursively ------- lower bond
+        System.out.println("*************** Construct BST Using PostOrder :: Method 2- recursion *********");
+        int[] index = {postOrder.length-1};
+        Node rootRecursively = constructPost.constructBSTPostRecursive(postOrder,index,Integer.MIN_VALUE);
+        tree.displayTree(rootRecursively,0);
+        tree.inOrder(rootRecursively);
+        System.out.println();
 
     }
 }

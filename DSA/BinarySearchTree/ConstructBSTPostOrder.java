@@ -28,4 +28,15 @@ public class ConstructBSTPostOrder {
         root.right = constructBSTPost(post, i+1, end-1);
         return root;
     }
+
+    // m-2
+
+    Node constructBSTPostRecursive(int[] post ,int[] index,int lowerBond){
+        if((index[0]<0) || lowerBond>post[index[0]]) return null;
+        Node root = new Node(post[index[0]]);
+        index[0]--;
+        root.right = constructBSTPostRecursive(post ,index,root.data);
+        root.left = constructBSTPostRecursive(post ,index,lowerBond);
+        return root;
+    }
 }
