@@ -41,7 +41,34 @@ public class MaxHeap {
 
     void displayHeap(){
         for(int i=0;i<size;i++){
-            System.out.println(heapArr[i]+"");
+            System.out.print(heapArr[i]+" ");
+        }
+    }
+
+    void delete(){
+        if(size==0){
+            System.out.println("Heap is Empty.");
+            return;
+        }
+        heapArr[0]=heapArr[size-1];
+        size--;
+        int i=0;
+        while(true){
+            int leftchild = leftChild(i);
+            int rightchild = rightChild(i);
+            int maxIndex =i;
+            if(leftchild<size && heapArr[leftchild]>heapArr[maxIndex]){
+                maxIndex = leftchild;
+            }
+            if(rightchild<size && heapArr[leftchild]<heapArr[maxIndex]){
+               maxIndex = rightchild;
+            }
+            if(i!=maxIndex){
+                swap(i, maxIndex);
+                i = maxIndex;
+            }else{
+                break;
+            }
         }
     }
 }

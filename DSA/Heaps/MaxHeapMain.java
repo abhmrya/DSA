@@ -10,5 +10,8 @@ public class MaxHeapMain {
         heap.insert(23);
         heap.insert(12);
         heap.displayHeap();
+        heap.delete();
+        System.out.println();
+        heap.displayHeap();
     }
 }
