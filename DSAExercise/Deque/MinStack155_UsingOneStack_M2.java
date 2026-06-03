@@ -11,7 +11,7 @@ public class MinStack155_UsingOneStack_M2 {
         min = Integer.MAX_VALUE;
     }
 
-    void push(int val){
+    void push(long val){
         if(mainStack.isEmpty()){
             mainStack.push(val);
             min=val;
@@ -23,7 +23,7 @@ public class MinStack155_UsingOneStack_M2 {
     }
 
     void pop(){
-        int x = mainStack.pop();
+        long x = mainStack.pop();
         if(x==min){
             min=mainStack.pop();
         }
