@@ -2,7 +2,13 @@ package DSA.Heaps;
 
 public class MaxHeapMain {
     public static void main(String[] args) {
-        MaxHeap heap= new MaxHeap(10);
+
+        // Array 
+
+        // MaxHeap heap= new MaxHeap(10);
+
+        // list Array
+        MaxHeap heap = new MaxHeap();
         heap.insert(50);
         heap.insert(30);
         heap.insert(35);
