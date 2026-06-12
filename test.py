@@ -54,3 +54,19 @@
 #         return newhead.next;
 #     }
 # }
+
+a = [10,30,20,40,5,5]
+b={}
+o=1
+c = a.copy()
+c.sort()
+re=[]
+for i in c:
+    if i not in b:
+        b[i] = o
+        o+=1
+print(b)
+for i in range(len(a)):
+    print(a[i],b[a[i]])
+    re.append(b[a[i]])
+print(re)
