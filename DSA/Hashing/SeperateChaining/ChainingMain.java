@@ -8,6 +8,11 @@ public class ChainingMain {
         table.insert(22);
         table.insert(15);
         table.insert(17);
-        table.printTable()
-    }
+        table.printTable();
+        System.out.println(table.search(12));
+        table.delete(12);
+        System.out.println(table.search(12));
+        table.printTable();
+    } 
 }
+;ll
