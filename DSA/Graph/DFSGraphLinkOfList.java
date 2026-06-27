@@ -6,11 +6,11 @@ import java.util.List;
 import java.util.Queue;
 import java.util.Stack;
 
-public class DFSGraphUsingHashMap {
+public class DFSGraphLinkOfList {
     private List<List<Integer>> adjList;
     private int vertices;
 
-    DFSGraphUsingHashMap(int vertices){
+    DFSGraphLinkOfList(int vertices){
         this.vertices = vertices;
         adjList = new ArrayList<>();
 
@@ -81,7 +81,7 @@ public class DFSGraphUsingHashMap {
     }
 
     public static void main(String[] args) {
-        DFSGraphUsingHashMap graph = new DFSGraphUsingHashMap(6);
+        DFSGraphLinkOfList graph = new DFSGraphLinkOfList(6);
         graph.addEdge(0, 1);
         graph.addEdge(1, 2);
         graph.addEdge(2, 4);
